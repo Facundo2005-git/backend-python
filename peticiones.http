@@ -1,0 +1,16 @@
+@urlbase = http://127.0.0.1:8000
+@usuarios = {{urlbase}}/users
+
+### Crear usuario
+POST {{usuarios}}
+Content-Type: application/json
+
+{
+   "email": "algunemail",
+   "password": "algunpassword",
+   "name": "jose",
+   "role": "profesor"
+}
+
+### Listar usuarios
+GET {{usuarios}}
